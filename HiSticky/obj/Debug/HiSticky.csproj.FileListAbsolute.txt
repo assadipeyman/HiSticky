@@ -1,0 +1,9 @@
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\bin\Debug\HiSticky.exe.config
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.csprojResolveAssemblyReference.cache
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.Properties.Resources.resources
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.StickyForm.resources
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.csproj.GenerateResource.Cache
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\bin\Debug\HiSticky.exe
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\bin\Debug\HiSticky.pdb
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.exe
+c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.pdb
