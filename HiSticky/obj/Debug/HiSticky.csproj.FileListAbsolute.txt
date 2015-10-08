@@ -7,3 +7,12 @@ c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\bin\Deb
 c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\bin\Debug\HiSticky.pdb
 c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.exe
 c:\users\p.asadi\documents\visual studio 2013\Projects\HiSticky\HiSticky\obj\Debug\HiSticky.pdb
+C:\Peyman\source\HiSticky\HiSticky\bin\Debug\HiSticky.exe.config
+C:\Peyman\source\HiSticky\HiSticky\obj\Debug\HiSticky.exe
+C:\Peyman\source\HiSticky\HiSticky\obj\Debug\HiSticky.pdb
+C:\Peyman\source\HiSticky\HiSticky\bin\Debug\HiSticky.exe
+C:\Peyman\source\HiSticky\HiSticky\bin\Debug\HiSticky.pdb
+C:\Peyman\source\HiSticky\HiSticky\obj\Debug\HiSticky.csprojResolveAssemblyReference.cache
+C:\Peyman\source\HiSticky\HiSticky\obj\Debug\HiSticky.Properties.Resources.resources
+C:\Peyman\source\HiSticky\HiSticky\obj\Debug\HiSticky.StickyForm.resources
+C:\Peyman\source\HiSticky\HiSticky\obj\Debug\HiSticky.csproj.GenerateResource.Cache

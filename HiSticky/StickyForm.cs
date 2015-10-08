@@ -187,7 +187,7 @@ namespace HiSticky
         {         
             int lineCount = txt_note.Lines.Count();
             Graphics g = CreateGraphics();
-            int width =(int) g.MeasureString(lineCount.ToString(), new Font("arial", 10)).Width+2;
+            int width =(int) g.MeasureString(lineCount.ToString(), new Font("arial", 10)).Width+7;
             Bitmap b = new Bitmap(width, txt_note.Height);            
             pictureBox1.Width = width;           
             g = Graphics.FromImage(b);
@@ -230,66 +230,89 @@ namespace HiSticky
 
         private void StickyForm_KeyDown(object sender, KeyEventArgs e)
         {
-            bool captured = false;
+            bool captured = true;
             switch (e.KeyCode)
             {
                 case Keys.Right:
-                    captured = true;
-                    if (e.Control)
+                    if (e.Shift)
                         Width += 50;
-                    else
+                    else if (e.Control)
                         showNext();
+                    else
+                        captured = false;
                     break;
                 case Keys.Left:
-                    captured = true;
-                    if (e.Control)
+                    if (e.Shift)
                         Width -= 50;
-                    else
+                    else if (e.Control)
                         showPrev();
+                    else
+                        captured = false;
                     break;
                 case Keys.N:
                     if (e.Control)
-                    {
-                        captured = true;
                         createNew();
-                    }
+                    else
+                        captured = false;
                     break;
                 case Keys.Up:
                     if (e.Control)
-                    {
-                        captured = true;
                         Height -= 50;
-                    }
+                    else
+                        captured = false;
                     break;
                 case Keys.Down:
                     if (e.Control)
-                    {
-                        captured = true;
                         Height += 50;
-                    }
+                    else
+                        captured = false;
                     break;
                 case Keys.Oemplus:
                     if (e.Control)
                     {
-                        captured = true;
                         if (Opacity < 1)
                             Opacity += .1;
                     }
+                    else
+                        captured = false;
                     break;
                 case Keys.OemMinus:
                     if (e.Control)
                     {
-                        captured = true;
                         if (Opacity > .6)
                             Opacity -= .1;
                     }
+                    else
+                        captured = false;
+                    break;
+                default:
+                    captured = false;
                     break;
             }
+            if (e.Control && e.Shift && !e.Alt)
+            {
+                if (txt_note.RightToLeft == System.Windows.Forms.RightToLeft.Yes)
+                    txt_note.RightToLeft = System.Windows.Forms.RightToLeft.No;
+                else
+                    txt_note.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+                captured = true;
+            }
             e.SuppressKeyPress = captured;
+
         }
 
-        private void StickyForm_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_note_RightToLeftChanged(object sender, EventArgs e)
         {
+            if (txt_note.RightToLeft == System.Windows.Forms.RightToLeft.Yes)
+                pictureBox1.Dock = DockStyle.Right;
+            else
+                pictureBox1.Dock = DockStyle.Left;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_note.RightToLeft = System.Windows.Forms.RightToLeft.No;
+//           MessageBox.Show(txt_note.RightToLeft.ToString());
         }
     }
 }
